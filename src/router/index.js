@@ -79,7 +79,7 @@ export const constantRoutes = [
         path: 'dashboard',
         component: () => import('@/views/dashboard/index'),
         name: 'Dashboard',
-        meta: { title: '仪表盘', icon: 'dashboard', affix: true }
+        meta: { title: '首页', icon: 'dashboard', affix: true }
       }
     ]
   },
@@ -126,14 +126,14 @@ export const constantRoutes = [
 
 /**
  * asyncRoutes
- * 动态需要根据权限加载的路由表 
+ * 动态需要根据权限加载的路由表
  */
 export const asyncRoutes = [
   {
     path: '/permission',
     component: Layout,
     redirect: '/permission/page',
-    alwaysShow: true, //将始终显示根菜单
+    alwaysShow: true, // 将始终显示根菜单
     name: 'Permission',
     meta: {
       title: '权限',
@@ -155,7 +155,7 @@ export const asyncRoutes = [
         component: () => import('@/views/permission/directive'),
         name: 'DirectivePermission',
         meta: {
-          title:'指令许可'
+          title: '指令许可'
           // 如果不设置角色，表示:此页面不需要权限
         }
       },

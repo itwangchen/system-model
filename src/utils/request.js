@@ -13,8 +13,7 @@ const service = axios.create({
 // request 拦截
 service.interceptors.request.use(
   config => {
-    //在发送请求之前做一些事情
-
+    // 在发送请求之前做一些事情
     if (store.getters.token) {
       // //让每个请求携带token
       // ['X-Token'] 是一个自定义 key
